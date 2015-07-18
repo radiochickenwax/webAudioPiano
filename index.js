@@ -29,7 +29,7 @@ window.onload = function()
                 // oscillator.stop();
 	        $( "#freq_amount" ).val( ui.value );	                
                 console.log(ui.value);
-                playTone(oscillator,'sine',ui.value,oscRun);
+                playTone(oscillator,'sine',ui.value);
 
 	    }
 	}
@@ -56,7 +56,7 @@ window.onload = function()
 
 
 
-function playTone (oscillator, type, freq,oscRun)
+function playTone (oscillator, type, freq)
 {
 	oscillator.type = 'sine';
 	oscillator.frequency.value = freq;   
