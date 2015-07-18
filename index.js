@@ -18,8 +18,16 @@ window.onload = function()
 	}
     ).click( function()
 	     {
-		 // oscillator = context.createOscillator();	
-		 // oscillator.start();
+		 // oscillator.stop;
+		 // delete oscillator;
+
+		 oscillator = context.createOscillator();	
+
+		 oscillator.connect(gain);
+		 gain.connect(context.destination);
+		 gain.gain.value = 0.05;
+
+		 oscillator.start();
 	     }
 	   );
 
@@ -31,6 +39,7 @@ window.onload = function()
     ).click( function()
 	     {
 		 oscillator.stop();
+		 delete oscillator;
 	     }
 	   );
 
