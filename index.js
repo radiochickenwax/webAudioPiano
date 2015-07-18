@@ -4,8 +4,6 @@ window.onload = function()
     context = new (window.AudioContext || window.webkitAudioContext)();
     oscillator = context.createOscillator();
     var gain = context.createGain();
-    oscRun = 0;
-    
 
     oscillator.connect(gain);
     gain.connect(context.destination);
@@ -31,7 +29,7 @@ window.onload = function()
                 // oscillator.stop();
 	        $( "#freq_amount" ).val( ui.value );	                
                 console.log(ui.value);
-                oscRun = playTone(oscillator,'sine',ui.value,oscRun);
+                playTone(oscillator,'sine',ui.value,oscRun);
 
 	    }
 	}
@@ -53,8 +51,6 @@ window.onload = function()
     );
 
 
-    // playTone(440);
-
 }
 
 
@@ -62,27 +58,6 @@ window.onload = function()
 
 function playTone (oscillator, type, freq,oscRun)
 {
-    // oscillator.stop();
-
-    if ( oscRun )
-    {
-	// oscillator.stop(0);
-	// oscillator.start();
-	oscillator.frequency.value = freq;   
-	console.log('already running.');
-	// oscillator = context.createOscillator();
-	// oscillator = 0;
-	return 0;
-    }
-    else
-    {
-	// oscillator = context.createOscillator();
 	oscillator.type = 'sine';
 	oscillator.frequency.value = freq;   
-
-	// oscillator.stop();
-	//oscillator.start();
-	// oscRun = 1;
-	return 1;
-    }
 }
