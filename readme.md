@@ -17,3 +17,12 @@ https://developer.mozilla.org/en-US/docs/Web/API/AudioContext
 
 Here's an oscillator:
 https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createOscillator
+
+live tone switcher
+http://mdn.github.io/violent-theremin/
+https://github.com/mdn/violent-theremin/blob/gh-pages/scripts/app.js
+
+
+
+Problem:  can't call .start more than once
+http://blog.szynalski.com/2014/04/02/web-audio-api/
