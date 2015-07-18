@@ -1,8 +1,44 @@
+<!-- 
+
+(setq-default indent-tabs-mode nil)
+ 
+-->
 <html>
+	<title>Tone Generator</title>
 	<head>
-		<script src="index.js"></script>  
+		<script src="../gregsList/foreign/jquery-2.1.0.js"></script>
+		<script src="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.css">
+		<script src="./index.js"></script>  
 	</head>
 	<body>
-		<h3>Hello World.</h3>
+		<h3>Tone Generator</h3>
+
+		<table>
+			<tr>
+                                <td>
+		                        <!-- Slider for Frequency  -->
+		                        <p>
+			                        <label for="amount">Frequency:</label>
+			                        <input type="text" id="freq_amount"  style="border:0; color:#f6931f; font-weight:bold;">
+		                        </p>
+
+		                        <div id="frequency">
+		                        </div>
+                                </td>
+                                <td>
+		                        <!-- Slider For Volume -->
+		                        <p>
+			                        <label for="amount">Volume:</label>
+			                        <input type="text" id="vol_amount"  style="border:0; color:#f6931f; font-weight:bold;">
+		                        </p>
+
+		                        <div id="volume">
+		                        </div>
+                                        
+                                </td>
+                        </tr>
+
+		</table>
 	</body>
 </html>
