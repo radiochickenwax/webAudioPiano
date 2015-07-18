@@ -1,6 +1,6 @@
 window.onload = function()
 {
-
+    // $("#frequency").css("height",400);
     context = new (window.AudioContext || window.webkitAudioContext)();
     oscillator = context.createOscillator();	
     gain = context.createGain();
@@ -10,8 +10,30 @@ window.onload = function()
     oscillator.frequency.value = 0;
     oscillator.start();
 
+    // setup play button
+    $("#play").button
+    (
+	{
+	    text:false,   icons:  { primary: 'ui-icon-play'  }
+	}
+    ).click( function()
+	     {
+		 // oscillator = context.createOscillator();	
+		 // oscillator.start();
+	     }
+	   );
 
-    // $("#frequency").css("height",400);
+    $("#stop").button
+    (
+	{ 
+	    text:false,  icons: { primary: 'ui-icon-stop' }
+	}
+    ).click( function()
+	     {
+		 oscillator.stop();
+	     }
+	   );
+
 
     // setup sliders
     $("#frequency").slider
