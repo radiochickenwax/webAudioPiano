@@ -13,7 +13,12 @@ window.onload = function()
     // setup play button
     $("td").click( function()
 		   {
-		       console.log( $(this).text() );
+		       // get freq from second word in <td>
+		       
+		       // the split actually gives a 14 element array.
+		       // var freq = $(this).text().split(" ") ;
+		       var freq = $(this).text().split(" ")[4] ;
+		       console.log(freq);
 		   }
 		 );
 }
