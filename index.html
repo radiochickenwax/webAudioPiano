@@ -4,48 +4,66 @@
  
 -->
 <html>
-	<title>Tone Generator</title>
-	<head>
-		<script src="../gregsList/foreign/jquery-2.1.0.js"></script>
-		<script src="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.js"></script>
-		<link rel="stylesheet" href="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.css">
-		<script src="./index.js"></script>  
-	</head>
-	<body>
-		<h3>Tone Generator</h3>
+  <title>WebAudio Piano</title>
+  <head>
+    <script src="../gregsList/foreign/jquery-2.1.0.js"></script>
+    <script src="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../gregsList/foreign/jquery-ui-1.11.4/jquery-ui.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>  
+  </head>
+  <body>
+    <h3>WebAudio Piano</h3>
+    
+    <table border=1>
+      <tr>
+        <td>
+	  <!-- c4 261.626 -->
+        </td>
+        <td>
+	  <!-- c#4 277.183 -->
+        </td>
+        <td>
+	  <!-- d4 293.665 -->
+        </td>
 
-		<table>
-			<tr>
-                                <td>
-		                        <!-- Slider for Frequency  -->
-		                        <p>
-			                        <label for="amount">Frequency:</label>
-			                        <input type="text" id="freq_amount"  style="border:0; color:#f6931f; font-weight:bold;">
-		                        </p>
+        <td>
+	  <!-- d#4 311.127 -->
+        </td>
 
-		                        <div id="frequency">
-		                        </div>
-                                </td>
-                                <td>
-		                        <!-- Slider For Volume -->
-		                        <p>
-			                        <label for="amount">Volume:</label>
-			                        <input type="text" id="vol_amount"  style="border:0; color:#f6931f; font-weight:bold;">
-		                        </p>
+        <td>
+	  <!-- e4 329.628 -->
+        </td>
 
-		                        <div id="volume">
-		                        </div>
-                                        
-                                </td>
-                        </tr>
-			<tr>
-			  <td>
-			    <button id="play">play</button>
+        <td>
+	  <!-- f4 349.228 -->
+        </td>
 
-			    <button id="stop">stop</button>
-			  </td>
+        <td>
+	  <!-- f#4 369.994 -->
+        </td>
 
-			</tr>
-		</table>
-	</body>
+        <td>
+	  <!-- g4 391.995 -->
+        </td>
+        <td>
+	  <!-- g#4 415.305 -->
+        </td>
+        <td>
+	  <!-- a4 440 -->
+        </td>
+        <td>
+	  <!-- a#4 466.164 -->
+        </td>
+        <td>
+	  <!-- b4 493.883 -->
+        </td>
+        <td>
+	  <!-- c5 523.251 -->
+        </td>
+
+
+      </tr>
+    </table>
+  </body>
 </html>
