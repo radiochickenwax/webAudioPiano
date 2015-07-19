@@ -12,9 +12,11 @@ window.onload = function()
 
     // setup play button
     $("td").click( function()
-	     {
-	   );
-
+		   {
+		       console.log( $(this).text() );
+		   }
+		 );
+}
 
 function playTone (oscillator, type, freq)
 {
